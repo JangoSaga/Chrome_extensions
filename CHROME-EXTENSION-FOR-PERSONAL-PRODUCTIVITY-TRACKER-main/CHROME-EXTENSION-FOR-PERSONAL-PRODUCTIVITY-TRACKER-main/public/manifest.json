@@ -1,0 +1,27 @@
+{
+  "name": "Focus-extension",
+  "description": "Productivity extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "activeTab", "storage", "tabs","notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "fire.png",
+    "default_width": 350,
+    "default_height": 500
+  },
+  "icons": {
+    "16": "fire.png",
+    "48": "fire.png",
+    "128": "fire.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
