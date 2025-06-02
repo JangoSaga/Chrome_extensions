@@ -92,21 +92,3 @@ npm run build # production build
 * Add drag-and-drop for tab reordering
 * Sync data using Chrome Storage Sync
 * Add dark mode
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-Developed by **Karan** – \[Full-stack Spring Boot & React Developer Aspirant]
-
----
-
-### ✅ Final Note:
-If your actual repo structure or stack differs slightly (like no Tailwind), just remove the related lines. If you'd like, I can auto-generate this into a downloadable `README.md` file as well.
-```
