@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Deep Focus",
+    "version": "1.0.0",
+    "description": "Track and improve your productivity",
+    "permissions": [
+      "storage",
+      "tabs",
+      "activeTab",
+      "notifications",
+      "webNavigation"
+    ],
+    "action": {
+      "default_popup": "index.html",
+        "default_title":"Deep Focus"
+    },
+    "background": {
+        "service_worker": "background.js",
+      "type":  "module"
+      },
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+          }
+          ],
+    "icons":{
+        "48":"fire.png"
+    },
+    "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  } 
+}
