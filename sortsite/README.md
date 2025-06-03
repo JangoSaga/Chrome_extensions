@@ -57,7 +57,7 @@ Optional:
 ### 1. Clone and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/tab-manager.git
+git clone https://github.com/Chrome_extensions/sortsite.git
 cd tab-manager
 npm install
 ````
